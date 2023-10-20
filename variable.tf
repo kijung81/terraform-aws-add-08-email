@@ -9,6 +9,10 @@ variable "password_sender" {
   sensitive = true
 }
 
+variable "tf_workspace" {
+  default = "add-secnario-08-email"
+  type = string
+}
 variable "db_name" {
   default = "golfzondb"
   description = "Unique name to assign to RDS instance"
